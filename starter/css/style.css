@@ -9,6 +9,29 @@ body {
   line-height: 1.5;
 }
 
+/* Header */
+header {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 65px;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+nav li {
+  padding:20px ;
+}
+
+nav li a{
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
