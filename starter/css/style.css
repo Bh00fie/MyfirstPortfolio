@@ -95,3 +95,14 @@ nav li a{
 
 
 /* Contact me */
+#contact-me-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center ;
+}
+
+#contact-me-text p {
+  color: var(--titles);
+  border-bottom: 5px solid var(--titles);
+  padding:5px;
+}
