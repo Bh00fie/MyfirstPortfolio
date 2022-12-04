@@ -68,8 +68,8 @@ nav li a{
   color: var(--header-line);
 }
 
-/* Page Wrapper */
 
+/* Page Wrapper */
 #about, #work, #contact {
   display: flex;
   
@@ -91,7 +91,6 @@ nav li a{
 }
 
 /* Portfolio Container  */
-
 #grid {
   display: grid;
   height: 1000px;
@@ -109,25 +108,38 @@ nav li a{
 
 #project1 {
   grid-area: project1;
+  background-image: url("/starter/images/02-portfolio-1.jpg");
 }
 #project2 {
   grid-area: project2;
+  background-image: url("/starter/images/02-portfolio-2.jpg");
 }
 #project3 {
   grid-area: project3;
+  background-image: url("/starter/images/02-portfolio-3.jpg");
 }
 #project4 {
   grid-area: project4;
+  background-image: url("/starter/images/02-portfolio-4.jpg");
 }
 #project5 {
   grid-area: project5;
+  background-image: url("/starter/images/02-run-buddy.jpg");
 }
+
+.projects{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  position: relative;
+}
+
+
 
 #project1,#project2,#project3, #project4, #project5 {
   border: 5px solid var(--tile-boxes);
   align-items: center;
-  
-  
 }
 
 #project1,#project2,#project3 {
