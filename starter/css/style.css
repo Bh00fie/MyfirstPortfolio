@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 :root {
@@ -34,11 +36,10 @@ header h1{
 }
 nav ul{
   display: flex;
-  list-style: none;
   justify-content: flex-end;
   padding-right: 65px;
-  
 }
+
 nav li {
   padding:5px ;
   border-bottom: 5px solid var(--tile-boxes);
@@ -46,9 +47,7 @@ nav li {
   
 }
 nav li a{
-  text-decoration: none;
   color: var(--tile-boxes)
-  
 }
 
 
@@ -68,3 +67,31 @@ nav li a{
   background-color: var(--tile-boxes);
   color: var(--header-line);
 }
+
+/* Page Wrapper */
+.page-wrapper {
+}
+
+#about, #work, #contact {
+  display: flex;
+  
+}
+.page-section h2{
+  color: var(--titles);
+  font-size: 40px;
+  text-align: right;
+  border-right: 5px solid var(--titles);
+  padding: 0px 20px 0px 50px;
+  margin: 40px 50px 0px 50px;
+  width: 20%;
+  max-width: 250px;
+  min-width: 100px;
+}
+
+#About-me-text, #grid, #contact-me-text {
+  padding: 20px 200px 0px 0px;
+  width: 80%;
+}
+
+
+/* Contact me */
