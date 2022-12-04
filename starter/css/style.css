@@ -13,23 +13,37 @@ body {
 header {
   display: flex;
   width: 100vw;
+  height: 65px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 65px;
+  background-color: grey;
 }
 
+header h1{
+  background-color: aqua;
+  padding-left: 65px;
+  text-align: start;
+  color: grey;
+}
 nav ul{
   display: flex;
   list-style: none;
   justify-content: flex-end;
+  padding-right: 65px;
+  
 }
 
 nav li {
-  padding:20px ;
+  padding:5px ;
+  border-bottom: 5px solid aqua;
+  margin: 0 5px;
+  
 }
 
 nav li a{
   text-decoration: none;
+  color: aqua;
+  
 }
 
 h1,
