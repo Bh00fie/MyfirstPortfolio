@@ -25,7 +25,6 @@ header {
   align-items: center;
   background-color: var(--header-line);
 }
-
 header h1{
   background-color: var(--tile-boxes);
   padding-left: 65px;
@@ -40,29 +39,32 @@ nav ul{
   padding-right: 65px;
   
 }
-
 nav li {
   padding:5px ;
   border-bottom: 5px solid var(--tile-boxes);
   margin: 0 5px;
   
 }
-
 nav li a{
   text-decoration: none;
   color: var(--tile-boxes)
   
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
 
-p {
-  margin: 0;
+/* Hero Banner */
+.hero-banner{
+  background-image: url(/starter/images/02-hero-bg.jpg);
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-size: cover; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 20px;
+}
+.hero-banner div h2 {
+  background-color: var(--tile-boxes);
+  color: var(--header-line);
 }
