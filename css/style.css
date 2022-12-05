@@ -74,10 +74,6 @@ nav li a{
   background-color: var(--tile-boxes);
   color: var(--header-line);
   width: 110%;
-
-
-
-
 }
 
 
@@ -125,23 +121,28 @@ nav li a{
 #project1 {
   grid-area: project1;
   background-image: url("/images/02-portfolio-4.jpg");
+  cursor: pointer;
 
 }
 #project2 {
   grid-area: project2;
   background-image: url("/images/02-portfolio-1.jpg");
+  cursor: pointer;
 }
 #project3 {
   grid-area: project3;
   background-image: url("/images/02-portfolio-2.jpg");
+  cursor: pointer;
 }
 #project4 {
   grid-area: project4;
   background-image: url("/images/02-portfolio-3.jpg");
+  cursor: pointer;
 }
 #project5 {
   grid-area: project5;
   background-image: url("/images/02-run-buddy.jpg");
+  cursor: pointer;
 }
 
 .projects{
