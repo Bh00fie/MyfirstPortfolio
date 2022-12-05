@@ -156,12 +156,12 @@ nav li a{
 
 #project1 { /* Project 1 */
   grid-area: project1;
-  background-image: url("/images/02-portfolio-4.jpg");
+  background-image: url("/images/Project2.jpg");
   cursor: pointer;
 }
 #project2 { /* Project 2 */
   grid-area: project2;
-  background-image: url("/images/02-portfolio-1.jpg");
+  background-image: url("/images/Project1.jpg");
   cursor: pointer;
 }
 #project3 { /* Project 3 */
@@ -210,18 +210,13 @@ nav li a{
   padding-right: 10px;
 }
 /* Position of the Description Boxes on top of the images */
-.project1-box { 
-  position: relative;
-  top: 140px;
-  right: 5px;
+.project1-box, .project2345-box { 
+  position: absolute;
+  bottom: 20px;
+  left: -1px;
   z-index: 100;
 }
-.project2345-box {
-  position: relative;
-  top: 40px;
-  right: 5px;
-  z-index: 100;
-}
+
 /* Styling properties of the text in the boxes on top of the images */
 .projects h3, .projects p {
   margin: 5px;
@@ -235,6 +230,18 @@ nav li a{
   font-size: 15px;  
 }
 
+/* Cover Image that gives a dark grey cover */
+.CoverImage {
+  background-color: rgba(150, 150, 150, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+/* Hover effect that makes the image clear */
+.CoverImage:hover {
+  background-color: rgba(150, 150, 150, 0.0);
+}
 /* ------------------- */
 
 /* Contact me */
@@ -246,7 +253,7 @@ nav li a{
   align-items: center ;
 }
 /* Styling of Contact Me text  */
-#contact-me-text a {
+#contact-me-text p {
   color: var(--titles);
   border-bottom: 5px solid var(--titles);
   padding:5px;
@@ -337,11 +344,6 @@ nav li a{
   #project3, #project5 {
     margin-left: 0px ;
   } 
-  /* Descriptive text is going to change position as well for the first project as dimensions changed */
-  .project2345-box, .project1-box {
-    z-index: 100;
-    top: 20px;
-  }
   /* Sizing of each project box has been made uniform */
   #project1,#project2,#project3, #project4, #project5 {
     height: 150px;
@@ -350,7 +352,13 @@ nav li a{
   /* Contact Me */
   /* Changed to display them one under the other */
   #contact-me-text {
-    display: block;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
     margin-bottom: 40px ;
+    margin-top: 20px;
+  }
+  #contact-me-text p{
+    margin: 5px;
   }
 }
