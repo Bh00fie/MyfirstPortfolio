@@ -1,9 +1,14 @@
+/* Abhinandan's Portfolio */
+/* General Styling */
+
+/* This properties will be applied to entire webpage */
 * {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
 }
 
+/* Color/Palette is being defined */
 :root {
   --bg: #d9e7fa;
   --tile-boxes: #c2c2c2;
@@ -11,12 +16,18 @@
   --contours:var(--tile-boxes);
   --titles: #5d5e5f;
 }
+
+/* General Property given to body and margin and padding set to zero to avoid possible confusion when using these properties */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
+
+
+/* ------------------- */
+
 
 /* Header */
 header {
@@ -28,6 +39,7 @@ header {
   align-items: center;
   background-color: var(--header-line);
 }
+  /* Header Title */
 header h1{
   background-color: var(--tile-boxes);
   padding-left: 65px;
@@ -35,6 +47,7 @@ header h1{
   text-align: start;
   color: var(--header-line);
 }
+  /* Nav Bar Styling */
 nav ul{
   display: flex;
   justify-content: flex-end;
@@ -52,24 +65,29 @@ nav li a{
 }
 
 
+/* ------------------- */
+
+
 /* Hero Banner */
+  /* Images and position in the Hero Banner */
 .hero-banner{
-  /* Image setting  */
+  /* Defining the background Image */
   background-image: url("/images/02-hero-bg.jpg");
   width: 100%;
   height: 200px;
   background-position: center;
   background-size: cover; 
-  /* Text Box  */
+  /* Given flex property to allow the small block to move around the bigger box, the Hero Banner  */
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  /* Text  */
+  /* Defining properties for the Box in which the text will be in   */
   text-align: center;
   font-size: 17.5px;
   padding-right: 100px;
   padding-bottom: 0px; 
 }
+  /* Defining text properties inside Hero Banner */
 .hero-banner div h2 {
   background-color: var(--tile-boxes);
   color: var(--header-line);
@@ -77,11 +95,22 @@ nav li a{
 }
 
 
+/* ------------------- */
+
+
+/* Main */
 /* Page Wrapper */
+/* Defined how much gap between each section */
+.page-section {
+  margin-bottom: 30px;
+}
+
+/* Defining Flex to allow different position of each block inside their corresponding section */
 #about, #work, #contact {
   display: flex;
   padding: 0 100px;
 }
+/* Defining Each Right Side Paragraph Title for each Section */
 .page-section h2{
   color: var(--titles);
   font-size: 60px;
@@ -92,17 +121,24 @@ nav li a{
   width: 400px;
   display: flex;
 }
+/* Position of Right Side Paragraph Title in the flex box */
 #About-me-text, #grid, #contact-me-text {
   margin: 20px 0px 0px 0px;
   width: 80%;
-  
 }
 
-/* Work  */
+/* ------------------- */
+
+/* About Me */
 #about p {
   font-size: 20px;
 }
-/* Portfolio Container  */
+
+/* ------------------- */
+
+/* Work */
+/* Portfolio Container using Grid */
+/* Grid Properties defined */
 #grid {
   display: grid;
   height: 800px;
@@ -118,33 +154,33 @@ nav li a{
   ;
 }
 
-#project1 {
+#project1 { /* Project 1 */
   grid-area: project1;
   background-image: url("/images/02-portfolio-4.jpg");
   cursor: pointer;
-
 }
-#project2 {
+#project2 { /* Project 2 */
   grid-area: project2;
   background-image: url("/images/02-portfolio-1.jpg");
   cursor: pointer;
 }
-#project3 {
+#project3 { /* Project 3 */
   grid-area: project3;
   background-image: url("/images/02-portfolio-2.jpg");
   cursor: pointer;
 }
-#project4 {
+#project4 { /* Project 4 */
   grid-area: project4;
   background-image: url("/images/02-portfolio-3.jpg");
   cursor: pointer;
 }
-#project5 {
+#project5 { /* Project 5 */
   grid-area: project5;
   background-image: url("/images/02-run-buddy.jpg");
   cursor: pointer;
 }
 
+/* Position of Image inside the each Project */
 .projects{
   background-position: center;
   background-repeat: no-repeat;
@@ -152,57 +188,64 @@ nav li a{
   align-items: center;
   display: flex;
   position: relative;
-  
 }
 
+/* Defining Padding, Border and Margin of Each Project Box */
+#project1,#project2,#project3, #project4, #project5 {
+  border: 5px solid var(--tile-boxes);
+  margin-bottom: 20px;
+}
+#project2,#project4{
+  margin-right: 10px ;
+} 
+#project3, #project5 {
+  margin-left: 10px ;
+} 
+
+/* Description Box on Each Project */
+/* Styling properties of the Description Box inside Images, how big */
 .projects div {
   background-color: var(--tile-boxes);
   padding-left: 10px;
   padding-right: 10px;
 }
-
+/* Position of the Description Boxes on top of the images */
+.project1-box { 
+  position: relative;
+  top: 140px;
+  right: 5px;
+  z-index: 100;
+}
 .project2345-box {
   position: relative;
-  top: 20px;
+  top: 40px;
+  right: 5px;
   z-index: 100;
 }
-
-.project1-box {
-  position: relative;
-  top: 120px;
-  z-index: 100;
+/* Styling properties of the text in the boxes on top of the images */
+.projects h3, .projects p {
+  margin: 5px;
+}
+.projects h3 {
+  text-align: left;
+  font-size: 20px;  
+}
+.projects p {
+  text-align: left;
+  font-size: 15px;  
 }
 
-#grid h3 p {
-  text-align: right;  
-}
-
-
-#project1,#project2,#project3, #project4, #project5 {
-  border: 5px solid var(--tile-boxes);
-  margin-bottom: 20px;
-}
-
-#project2,#project4{
-  margin-right: 10px ;
-} 
-
-#project3, #project5 {
-  margin-left: 10px ;
-} 
-
+/* ------------------- */
 
 /* Contact me */
-.page-section {
-  margin-bottom: 30px;
-}
-
+/* Contact Me Margin styling */
+/* Defining Flex property in order to evenly space and position in info */
 #contact-me-text {
   display: flex;
   justify-content: space-evenly;
   align-items: center ;
 }
-
+/* Styling of Contact Me text  */
 #contact-me-text a {
   color: var(--titles);
   border-bottom: 5px solid var(--titles);
@@ -210,9 +253,15 @@ nav li a{
   font-size: 20px;
 }
 
+
+/* ------------------- */
+
+
 /* Screen size adjustment */
+/* Screen Adjusted for anything between 979px and 769px */
 @media only screen and (max-width: 979px) {
   /* Header */
+  /* Header changed as H1 is going to be above the Nav Bar */
   header {
     display: block;
     width: 100%;
@@ -243,6 +292,7 @@ nav li a{
   }
   
   /* Page Wrapper */
+  /* Position of Right Side title is going to move each paragraph, so title on top and content underneath */
   #about, #work, #contact {
     display: block;
     padding: 0 50px;
@@ -262,13 +312,18 @@ nav li a{
     margin: 20px 0px 0px 0px;
     width: 100%;
   }
+
   /* Contact */
+  /* Margin Reduce for better styling */
   #contact-me-text {
     margin: 0px;
   }
 }
 
+
+/* Screen Adjusted for anything under 769px */
 @media only screen and (max-width: 769px) {
+  /* Grid changed as each project now is going to be same styling and positioned in column, one under another */
   #grid {
     display: flex;
     flex-direction: column;
@@ -276,30 +331,26 @@ nav li a{
     width: 100%;
     height: auto;
   }
-
   #project2,#project4{
     margin-right: 0px ;
   } 
-  
   #project3, #project5 {
     margin-left: 0px ;
   } 
+  /* Descriptive text is going to change position as well for the first project as dimensions changed */
   .project2345-box, .project1-box {
-    display: flex;
-    align-items: flex-end;
     z-index: 100;
     top: 20px;
   }
-
+  /* Sizing of each project box has been made uniform */
   #project1,#project2,#project3, #project4, #project5 {
     height: 150px;
   }
 
+  /* Contact Me */
+  /* Changed to display them one under the other */
   #contact-me-text {
     display: block;
-    /* flex-direction: column;
-    align-items: flex-start; */
-    height: 50px;
+    margin-bottom: 40px ;
   }
-  
 }
