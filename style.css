@@ -253,6 +253,10 @@ nav li a{
   align-items: center ;
 }
 /* Styling of Contact Me text  */
+#contact-me-text a {
+  color: var(--titles); 
+}
+
 #contact-me-text p {
   color: var(--titles);
   border-bottom: 5px solid var(--titles);
