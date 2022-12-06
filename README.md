@@ -25,6 +25,9 @@ The website must check these criteria:
 - When images of the applications are clicked then the user is taken to that deployed application.
 - When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport.
 
+
+---
+
 ## Description
 
 I have started by creating a plan to follow which allowed me to follow a clear path and not try to do "some here some there". 
@@ -44,7 +47,20 @@ The plan was the following:
 - Commented
 - Pushed code and deploy webpage on GitHub
 
+The use of Grid was composulary, the `grid` could have been used in two ways, you could have make a main grid including everything under `page-wrapper` and nest another `grid` for the `work` section. Or, you could create use `display: flex` for every title or the right side of the page and make a `grid` for the work section.
+
+![Grid](/Images/grid.jpg)
+
+One of the criteria for this Portfolio as well for this assignment was to create an hover effect when going on top of the image of a project. 
+This was done by creating the hyperlink element `a` and giving a class to create a box to cover the image, this was put on top using index-z. The transparency was set to 0.5 by default and the hoper effect simply makes the box transparent so the link can be still clicked.
+
+![Hover Effect](/Images/hover.gif)
+
+The responsiveness of this website was also crucial, indeed different styling can be seen in the `Final Results` Section.
+
 The update website can be found at: abhinandanthour.com
+
+---
 
 ## Final Results at different screen sizes
 
@@ -55,7 +71,8 @@ The update website can be found at: abhinandanthour.com
 ### - Width: Below 789px
 ![Small Width](/Images/Solution/Myownwebsite/789pxOwnWebsite.png)
 
-stuff I still need to add
+---
+
 ## License
 
 MIT Licence
