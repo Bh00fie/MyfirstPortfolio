@@ -11,7 +11,7 @@ My goal would be to create a website that changes design at three different widt
 I was given a specific layout to copy, the following: 
 
 ### - Width: Full Screen (above 980px) 
-![Full Width](/Solution%20and%20instruction/Large%20Screen.png)
+![Full Width](/Solution%20and%20instruction/LargeScreen.png)
 ### - Width: between 789px and 980px
 ![Medium Width](/Solution%20and%20instruction/Medium.png)
 ### - Width: Below 789px
