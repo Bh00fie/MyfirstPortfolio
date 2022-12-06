@@ -120,6 +120,8 @@ nav li a{
   min-width: 100px;
   width: 400px;
   display: flex;
+  justify-content: flex-end;
+  text-align: right;
 }
 /* Position of Right Side Paragraph Title in the flex box */
 #About-me-text, #grid, #contact-me-text {
@@ -318,6 +320,8 @@ nav li a{
     min-width: 100px;
     width: 100%;
     display: flex;
+    justify-content: flex-start;
+    text-align: left;
   }
   #About-me-text, #grid, #contact-me-text {
     margin: 20px 0px 0px 0px;
