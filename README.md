@@ -11,11 +11,11 @@ My goal would be to create a website that changes design at three different widt
 I was given a specific layout to copy, the following: 
 
 ### - Width: Full Screen (above 980px) 
-![Full Width](/Solution%20and%20instruction/LargeScreen.png)
+![Full Width](/Images/Solution/LargeScreen.png)
 ### - Width: between 789px and 980px
-![Medium Width](/Solution%20and%20instruction/Medium.png)
+![Medium Width](/Images/Solution/Medium.png)
 ### - Width: Below 789px
-![Small Width](/Solution%20and%20instruction/small.png)
+![Small Width](/Images/Solution/small.png)
 
 The website must check these criteria: 
 - When the page is loaded the page presents your name, a recent photo or avatar, and links to sections about you, your work, and how to contact you.
@@ -49,11 +49,11 @@ The update website can be found at: abhinandanthour.com
 ## Final Results at different screen sizes
 
 ### - Width: Full Screen (above 980px) 
-![Full Width](/Solution%20and%20instruction/Myownwebsite/FullWidthOwnWebsite.png)
+![Full Width](/Images/Solution/Myownwebsite/FullWidthOwnWebsite.png)
 ### - Width: between 789px and 980px
-![Medium Width](/Solution%20and%20instruction/Myownwebsite/980pxOwnWebsite.png)
+![Medium Width](/Images/Solution/Myownwebsite/980pxOwnWebsite.png)
 ### - Width: Below 789px
-![Small Width](/Solution%20and%20instruction/Myownwebsite/789pxOwnWebsite.png)
+![Small Width](/Images/Solution/Myownwebsite/789pxOwnWebsite.png)
 
 stuff I still need to add
 ## License
