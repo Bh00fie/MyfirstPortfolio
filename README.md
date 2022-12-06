@@ -2,77 +2,52 @@
 
 ## Introduction
 
-In this challenge, I am going to make a personal portfolio using all the knowdledge gained in the last week, this include, flexbox, grid, Responsive Web Design, Root and the Hover effect. 
+A portfolio of work can showcase your skills and talents to employers looking to fill a part-time or full-time position. An effective portfolio highlights your strongest work as well as the thought processes behind it.
 
-My goal would be to create a website that changes design at three different width, xxxpx, xxxpx and xxxpx as well as usign grid efficiently while unsuring the layout of the website is consistent and good.
+In this challenge, I am going to make a personal portfolio using all the knowledge gained in the last week, this include, flexbox, grid, Responsive Web Design, Root and the Hover effect. 
+
+My goal would be to create a website that changes design at three different widths, `Full Screen`, `980px` and `789px` as well as use Grid efficiently while ensuring the layout of the website is consistent and impressive to whoever is going to check your website.
 
 I was given a specific layout to copy, the following: 
 
-- Full Screen
-- Mid Screen
-- Small Screen
+### - Width: Full Screen (above 980px) ![Full Width](/MyfirstPortfolio/Solution%20and%20instruction/Large%20Screen.png)
+### - Width: between 789px and 980px![Medium Width](/MyfirstPortfolio/Solution%20and%20instruction/Medium.png)
+### - Width: Below 789px![Small Width](/MyfirstPortfolio/Solution%20and%20instruction/small.png)
+
+The website must check these criteria: 
+- When the page is loaded the page presents your name, a recent photo or avatar, and links to sections about you, your work, and how to contact you.
+- When one of the links in the navigation is clicked then the UI scrolls to the corresponding section.
+- When viewing the section about your work then the section contains titled images of your applications.
+- When presented with your first application then that application's image should be larger in size than the others.
+- When images of the applications are clicked then the user is taken to that deployed application.
+- When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport.
 
 ## Description
 
-I have started with creating a plan to follow which allowed me to follow a clear path and not try to do "some here some there". The plan was the following. 
+I have started by creating a plan to follow which allowed me to follow a clear path and not try to do "some here some there". 
+The plan was the following:
 - Wireframe Model
 - Rough HTML
 - Rough CSS
-	- Root for different colours
+	- Root for different colors
 	- Header using flex
 	- About me using flex
 	- Work using Grid
 	- Contacts using Flex
 - Cleaned and fixed remaining HTML Code
-- Cleaned and fixed remaining CSS code (added hover effects)
+- Cleaned and fixed remaining CSS code (added hover effects for example)
 - Responsive design at 980px
 - Responsive design at 789px
 - Commented
 - Pushed code and deploy webpage on GitHub
 
-----
-stuff from the assignment page
-----
-
-The update website can be found at: https://bh00fie.github.io/Horiseon-SEO-and-Digital-Marketing/
+The update website can be found at: abhinandanthour.com
 
 ## Final Results at different screen sizes
 
-- Full widht
-- Medium width
-- Small width
-
-Various changes were made to the code to make it more accessible and efficient. 
-
-Starting from the top of the HTML file, the title of the website has changes from "webpage" to "Horiseon - SEO and Digital Marketing experts" which is the customer name:
-![Old Title](/assets/images/Title-old.jpg) vs ![New Title](/assets/images/Title-new.jpg)
-
-Moving to the body, previous developer did not use comments and a semantic structure which I have implemented:
-![Without Semantic Code](/assets/images/Semantic-old.jpg) vs ![With Semantic Code](/assets/images/Semantic-new.jpg)
-In the image above of the old code, it can be also seen that `alt` attributes were not used, fundamental to have an accessible website.
-Comments were also missing which helps future developer as well as the customer to understand what each line means and allows to make it easier when upgrading or making any changes to the website.
-
-CSS Stylesheet was also missing comments:
-![Old CSS Comments](/assets/images/Comments-old.jpg) vs ![New CSS Comments](/assets/images/Comments-new.jpg)
-These are fundamental to make the code clearer and keep track of changes or features.
-
-As the HTML was changed to a sementic structure, many `div` and `class` were taken out such and replaced, a clear example is the navigation bar:
-![Old Nav Bar](/assets/images/Nav-old.jpg) vs ![New Nav Bar](/assets/images/Nav-new.jpg)
-
-Also, the stylesheet was full of unnecessary repetition which could slow the webpage done and makes it difficult to make changes in the feature so classes with the same style have been grouped together:
-![Old Code with Repetitions](/assets/images/Repititions-old.jpg) vs ![Old Code without Repetitions](/assets/images/Repititions-new.jpg)
-By doing so the code went from 201 lines to 128 keeping the webpage look and functionality the same.
-
-As the footer is not a class anymore it was replaced with its own element:
-![Old Footer](/assets/images/Footer-old.jpg) vs ![New Footer](/assets/images/Footer-new.jpg)
-
-The final website looks like the following:
-![Updated Webpage](/assets/images/Final-website.png)
-
-## Credits
-
-Horiseon webpage and challange taken from: edX 16 week bootcamp Front End Developer on [GitLab] (https://git.bootcampcontent.com/uk-edx-16-week/UK-VIRT-FE-PT-11-2022-U-LOLC)
-
+### - Width: Full Screen (above 980px) ![Full Width](/MyfirstPortfolio/Solution%20and%20instruction/Myownwebsite/FullWidthOwnWebsite.png)
+### - Width: between 789px and 980px![Medium Width](/MyfirstPortfolio/Solution%20and%20instruction/Myownwebsite/980pxOwnWebsite.png)
+### - Width: Below 789px![Small Width](/MyfirstPortfolio/Solution%20and%20instruction/Myownwebsite/789pxOwnWebsite.png)
 
 ## License
 
